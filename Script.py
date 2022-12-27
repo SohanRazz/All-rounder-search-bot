@@ -67,7 +67,7 @@ Here is the help for my COMMANDS."""
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of Lazy Princess
+these are the extra features of All_Rounder_Seaech_bot
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specified user.</code>
