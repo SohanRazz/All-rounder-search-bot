@@ -36,12 +36,6 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Sohanrazz:Sohanrazz@cl
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Forward bot')
 
-# Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001495446942))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001807508263))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+rsU63u4T3ew1N2I1')
-HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/Netflix_hindi_movies_4k/341')
-
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001852774435))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'SOHANRAJPUROHIT')
@@ -58,7 +52,7 @@ INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001807508263')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
