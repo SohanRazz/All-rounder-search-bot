@@ -17,8 +17,8 @@ API_HASH = environ.get('API_HASH', '56ded95eda29b601363e3093a54ba42b')
 BOT_TOKEN = environ.get('BOT_TOKEN', "5906162752:AAGbwDIaNt75V3z3MpV7LaaVHKFNqrRs2eI")
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+CACHE_TIME = int(environ.get('CACHE_TIME', 120))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/0cd207c95824888d62641.jpg https://telegra.ph/file/2dae51b4f5c16470eb284.jpg https://telegra.ph/file/dae6113f83bfbdb85208f.jpg https://telegra.ph/file/08443f8c77349a5e02ca5.jpg https://telegra.ph/file/e9c215c9c82cedd1fd959.jpg ')).split()
 
 # Admins, Channels & Users
@@ -28,7 +28,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('https://t.me/netflix_hindi_movies_4k')
 auth_grp = environ.get('https://t.me/netflix_hindi_movies_4k')
-AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+AUTH_CHANNEL = int(https://t.me/netflix_hindi_movies_4k) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
